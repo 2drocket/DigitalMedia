@@ -28,15 +28,15 @@
   	<!-- Full-width images with number and caption text -->
   	<div class="mySlides fade">
    	 <div class="numbertext">1 / 3</div>
-    	<img src="images/processed/BMXsliding.jpg" style="width:100%" alt="Bike">
+    	<img src="images/processed/" style="width:100%" alt="FirstImg">
  	 </div>
   	<div class="mySlides fade">
     	<div class="numbertext">2 / 3</div>
-    	<img src="images/processed/BMXshow2.jpg" style="width:100%" alt="Bike2">
+    	<img src="images/processed/" style="width:100%" alt="SecondImg">
    	</div>
   	<div class="mySlides fade">
     	<div class="numbertext">3 / 3</div>
-    	<img src="images/processed/BMXshow3.jpg" style="width:100%" alt="Bike3">
+    	<img src="images/processed/" style="width:100%" alt="ThirdImg">
   	</div>
 	<button class="prev" onclick="plusDivs(-1)">&#10094;</button>
   	<button class="next" onclick="plusDivs(1)">&#10095;</button>
@@ -49,6 +49,42 @@
 		<div class="mainbottom"><h1>main</h1></div>
 		<div class="rightbit"><h1>left</h1></div>
 	</div>
+
+	<script>
+		//Slideshow Start
+		var slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  slides[slideIndex-1].style.display = "block";
+		  setTimeout(showSlides, 5000); // Change image every 5 seconds / 5000 milliseconds
+		}
+		//and this section is to drive the advance button
+				
+		showDivs(slideIndex);
+		
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+		
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length} ;
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		  }
+		  x[slideIndex-1].style.display = "block";
+		}
+		</script>
 
 	</body>
 </html>
