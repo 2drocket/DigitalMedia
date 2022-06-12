@@ -15,8 +15,9 @@ header {
 	border: red;
 	border-style: solid;
 	margin:auto;
-	background-color: #B6A6A6;
+	background-color: #333;
 	box-sizing: border-box;
+  min-width: 1016px;
 }
 #logo {
     
@@ -30,19 +31,25 @@ header {
 }
 #titling {
 
-	width:80%;
+	width:50%;
   height:100px;
 	float: left;
 	border:green;
 	border-style: solid;
 	text-align:center;
 	box-sizing: border-box;
+  min-width: 1016px;
 }
+/** This is where all of my text fonts and colours will sit **/
 h1 {
 	font-size: 40px;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 }
-
+h2 {
+	font-size: 40px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  color:white;
+}
 
 .navbar {
 
@@ -57,6 +64,7 @@ h1 {
 	box-sizing: border-box;
 	text-align: center;
   line-height: 60px;
+  min-width: 1016px;
 }
 
 .navbar a {
@@ -85,7 +93,7 @@ margin:auto;
   height:700px;
   border: #ECC805;
   border-style: solid;
-  background-color: #B6A6A6;
+  background-color: #FEFFFF;
   box-sizing: border-box;
 }
 .leftbittop {
@@ -128,8 +136,6 @@ margin:auto;
 .mySlides {
   display: none;
 	margin: auto;
-	padding-left: 10%;
-	padding-top: 5%
 }
 
 /* Next & previous buttons */
