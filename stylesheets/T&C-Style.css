@@ -2,9 +2,9 @@
 /* CSS Document */
 body { margin-top:0px;
 	   max-width:1920px;
-       overflow: hidden;
 	   margin:auto;
-	   height:100%
+	   height:100%;
+     background-color: #F5F5F5;
 }
 
 header {
@@ -31,18 +31,17 @@ header {
 }
 #titling {
 
-	width:50%;
+	width:70%;
   height:100px;
 	float: left;
 	border:green;
 	border-style: solid;
 	text-align:center;
 	box-sizing: border-box;
-  min-width: 1016px;
 }
 /** This is where all of my text fonts and colours will sit **/
 h1 {
-	font-size: 40px;
+	font-size: 15px;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 }
 h2 {
@@ -65,6 +64,7 @@ h2 {
 	text-align: center;
   line-height: 60px;
   min-width: 1016px;
+  border-top: 0px;
 
 }
 
@@ -89,82 +89,15 @@ margin:auto;
 
 .content {
   resize: both;
-  overflow: hidden;
   width:100%;
-  height:700px;
-  border: #ECC805;
-  border-style: solid;
-  background-color: #FEFFFF;
-  box-sizing: border-box;
-}
-.leftbittop {
-
-  height: inherit;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  text-align:center;
-  float:left;
-  width: 25%;
-  height:350px;
-  border:#06EE66;
-  border-style: solid;
-  box-sizing: border-box;
-}
-.rightbittop {
-  margin: 0px,0px,0px,0px;
-  height:inherit;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  text-align:center;
-  float:left;
-  width: 25%;
-  height:350px;
-  border:#06EE66;
-  border-style: solid;
+  height:900px;
   box-sizing: border-box;
 }
 
-/* Slideshow container */
 .mainbittop {
-  width: 50%;
+  width: 80%;
   position: relative;
   margin: auto;
   height: 350px;
-  float: left;
-}
-
-
-.leftbit {
-
-  height: inherit;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  text-align:center;
-  float:left;
-  width: 25%;
-  height:350px;
-  border:#06EE66;
-  border-style: solid;
-  box-sizing: border-box;
-}
-.mainbottom {
-
-  height:inherit;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  text-align:center;
-  float:left;
-  width: 50%;
-  height: 350px;
-  border:#06EE66;
-  border-style: solid;
-  box-sizing: border-box;
-}
-.rightbit {
-  margin: 0px,0px,0px,0px;
-  height:inherit;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  text-align:center;
-  float:left;
-  width: 25%;
-  height:350px;
-  border:#06EE66;
-  border-style: solid;
-  box-sizing: border-box;
+  float: center;
 }
