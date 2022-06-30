@@ -2,109 +2,33 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<link rel="stylesheet" media="screen and (min-device-width: 1016px)" href="stylesheets/mainstyle.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 1015px)" href="stylesheets/smallerstyle.css">
-<title>Micro:bits - Home</title>
+	<link rel="stylesheet" href="../stylesheets/Database-Style.css">
+<title>Micro:bits - Database Page</title>
 </head>
 
 	<body>
 
 	<header>
 		<div id="logo"><h2>Logo</h2></div>
-		<div id="titling"><h2>Microbits</h2></div>
+		<div id="titling"><h2>Learn Micro:bits</h2></div>
 	</header>
 
 	<nav class="navbar">
-		 <a href="#">Home</a>
-		 <a href="#">Tutorials</a>
-		 <a href="#">Gallery</a>
-		 <a href="#">Database</a>
-		 <a href="#">About us</a>
+		 <a href="../index.html">Home</a>
+		 <a href="Tutorials.html">Tutorials</a>  <!-- Having the tags blank there will just makes it so that the button is still clickable but just refreshes the page which is a convention -->
+		 <a href="Gallery.html">Gallery</a>
+		 <a href="">Database</a>
+		 <a href="T&C.html">About us</a>
 
 	</nav>
 
 	<div class="content"> <!--This is where the placement for the content boxes are set-->
-		<div class="leftbittop"><h1>left</h1></div>
-		<div class="slideshow-container">
-		
-  	<!-- Full-width images with number and caption text -->
-  	<div class="mySlides fade">
-   	 <div class="numbertext"></div>
-    	<img src="images/processed/Slideshow 1.jpg" style="width:100%" alt="FirstImg">
- 	 </div>
-  	<div class="mySlides fade">
-    	<div class="numbertext"></div>
-    	<img src="images/processed/" style="width:100%" alt="SecondImg">
-   	</div>
-  	<div class="mySlides fade">
-    	<div class="numbertext"></div>
-    	<img src="images/processed/" style="width:100%" alt="ThirdImg">
-  	</div>
+		<div class="mainbittop">
+		</div>
 
 	</div>
-		<div class="rightbittop"><img src="images/raw/microbitimage2.jpg"></div>
-		<div class="leftbit"><h1>left</h1></div>
-		<div class="mainbottom"><h1>main</h1></div>
-		<div class="rightbit"><h1>left</h1></div>
+
 	</div>
-
-	<script>
-		//Slideshow Start
-		var slideIndex = 0;
-		showSlides();
-		
-		function showSlides() {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		  }
-		  slideIndex++;
-		  if (slideIndex > slides.length) {slideIndex = 1}
-		  slides[slideIndex-1].style.display = "block";
-		  setTimeout(showSlides, 5000); // Change image every 5 seconds / 5000 milliseconds
-		}
-		//and this section is to drive the advance button
-				
-		showDivs(slideIndex);
-		
-		function plusDivs(n) {
-		  showDivs(slideIndex += n);
-		}
-		
-		function showDivs(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  if (n > x.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = x.length} ;
-		  for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-		  }
-		  x[slideIndex-1].style.display = "block";
-		}
-		//============================================================================//
-
-		function adjustStyle(width) {
-  		width = parseInt(width);
-  		if (width < 701) {
-    		$("#size-stylesheet").attr("href", "css/narrow.css");
-  		} else if (width < 900) {
-   		 $("#size-stylesheet").attr("href", "css/medium.css");
-  		} else {
-     		$("#size-stylesheet").attr("href", "css/wide.css"); 
- 		 }
-}
-			//This section is for automatic resizing so when it reaches a certain size it swaps stylesheets
-			//So they can fix the padding for the navbar so they appear on smaller screens rather than getting kicked out.
-
-		$(function() {
-  		adjustStyle($(this).width());
-  		$(window).resize(function() {
-    		adjustStyle($(this).width());
-  		});
-		});
-
-		</script>
 
 	</body>
 </html>

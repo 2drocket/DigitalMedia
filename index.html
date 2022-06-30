@@ -15,10 +15,10 @@
 	</header>
 
 	<nav class="navbar">
-		 <a href="#">Home</a>
-		 <a href="#">Tutorials</a>
-		 <a href="#">Gallery</a>
-		 <a href="#">Database</a>
+		 <a href="">Home</a>
+		 <a href="pages/Tutorials.html">Tutorials</a>
+		 <a href="pages/Gallery.html">Gallery</a>
+		 <a href="">Database</a>
 		 <a href="pages/T&C.html">About us</a>
 
 	</nav>
@@ -49,7 +49,7 @@
 	</div>
 
 	<script>
-		//Slideshow Start
+		// ! This displays the slideshow
 		var slideIndex = 0;
 		showSlides();
 		
@@ -82,7 +82,10 @@
 		  }
 		  x[slideIndex-1].style.display = "block";
 		}
-		//============================================================================//
+		//===============================================================================================================//
+
+			//This section is for automatic resizing so when it reaches a certain size it swaps stylesheets
+			//So they can fix the padding for the navbar so they appear on smaller screens rather than getting kicked out.
 
 		function adjustStyle(width) {
   		width = parseInt(width);
@@ -94,8 +97,7 @@
      		$("#size-stylesheet").attr("href", "css/wide.css"); 
  		 }
 }
-			//This section is for automatic resizing so when it reaches a certain size it swaps stylesheets
-			//So they can fix the padding for the navbar so they appear on smaller screens rather than getting kicked out.
+
 
 		$(function() {
   		adjustStyle($(this).width());
