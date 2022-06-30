@@ -26,13 +26,11 @@ header {
 	box-sizing: border-box;
 }
 #titling {
-
-	width:50%;
+  width:70%;
   height:100px;
 	float: left;
 	text-align:center;
 	box-sizing: border-box;
-  min-width: 1016px;
 }
 /** This is where all of my text fonts and colours will sit **/
 h1 {
