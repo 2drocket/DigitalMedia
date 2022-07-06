@@ -10,7 +10,7 @@
 	<body>
 
 	<header>
-		<div id="logo"><h2>Logo</h2></div>
+		<div id="logo"><img src="images/processed/microbitLogo.svg"></div>
 		<div id="titling"><h2>Learn Micro:bits</h2></div>
 	</header>
 
@@ -49,7 +49,13 @@
 	</div>
 
 	<script>
-		// ! This displays the slideshow
+		//===============================================================================================================//
+
+			//This section of javascript is for getting the slideshow to function
+			//This is also where the hardcoded value for the slideshow is set.
+
+		//===============================================================================================================//
+
 		var slideIndex = 0;
 		showSlides();
 		
@@ -87,6 +93,8 @@
 			//This section is for automatic resizing so when it reaches a certain size it swaps stylesheets
 			//So they can fix the padding for the navbar so they appear on smaller screens rather than getting kicked out.
 
+		//===============================================================================================================//
+
 		function adjustStyle(width) {
   		width = parseInt(width);
   		if (width < 701) {
@@ -97,7 +105,6 @@
      		$("#size-stylesheet").attr("href", "css/wide.css"); 
  		 }
 }
-
 
 		$(function() {
   		adjustStyle($(this).width());

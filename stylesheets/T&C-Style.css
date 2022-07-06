@@ -24,6 +24,7 @@ header {
 	text-align:center;
 	box-sizing: border-box;
 }
+
 #titling {
 	width:70%;
   height:100px;
@@ -31,6 +32,7 @@ header {
 	text-align:center;
 	box-sizing: border-box;
 }
+
 /** This is where all of my text fonts and colours will sit **/
 h1 {
 	font-size: 15px;
