@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<link rel="stylesheet" media="screen and (min-device-width: 1016px)" href="stylesheets/Main-Style.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 1015px)" href="stylesheets/Smaller-Style.css">
+	<link rel="stylesheet" href="stylesheets/Main-Style.css">
 <title>Micro:bits - Home</title>
 </head>
 
@@ -94,24 +93,6 @@
 			//So they can fix the padding for the navbar so they appear on smaller screens rather than getting kicked out.
 
 		//===============================================================================================================//
-
-		function adjustStyle(width) {
-  		width = parseInt(width);
-  		if (width < 701) {
-    		$("#size-stylesheet").attr("href", "css/narrow.css");
-  		} else if (width < 900) {
-   		 $("#size-stylesheet").attr("href", "css/medium.css");
-  		} else {
-     		$("#size-stylesheet").attr("href", "css/wide.css"); 
- 		 }
-}
-
-		$(function() {
-  		adjustStyle($(this).width());
-  		$(window).resize(function() {
-    		adjustStyle($(this).width());
-  		});
-		});
 
 		</script>
 
